@@ -20,11 +20,9 @@ class ImageCacheManager {
     internal let cacheDirectory: URL
     
     private init() {
-        // Get cache directory url
         let directoryPath = fileManager.urls(for: .cachesDirectory, in: .userDomainMask)
         cacheDirectory = directoryPath[0].appendingPathComponent("ImageCache")
         
-        // Create directory if it does not already exist
         try? fileManager.createDirectory(at: cacheDirectory, withIntermediateDirectories: true)
     }
     

@@ -62,7 +62,7 @@ struct RecipeRowView: View {
                             }
                             .font(.subheadline)
                         }
-                        .foregroundStyle(.link)
+                        .foregroundStyle(.blue)
                     }
                 }
                 .transition(.opacity.combined(with: .move(edge: .top)))
@@ -71,8 +71,4 @@ struct RecipeRowView: View {
         }
         .padding(8)
     }
-}
-
-#Preview {
-    RecipeRowView(recipe: Recipe(id: "xx", name: "XX", cuisine: "XXX", photoUrlLarge: URL(string: "XX")!, photoUrlSmall: URL(string: "XX")!, sourceUrl: URL(string: "XX")!, youtubeUrl:  URL(string: "https://www.youtube.com/watch?v=s8MDNFaGfT4")!))
 }
